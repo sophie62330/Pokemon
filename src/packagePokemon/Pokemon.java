@@ -21,6 +21,7 @@ public class Pokemon {
 	 */
 	private static int nbPokemons;
 	
+	
 	/**
 	 * constructeur vide
 	 */
@@ -56,7 +57,7 @@ public class Pokemon {
 	 */
 	public void attaquer(Pokemon pok,double degats) {
 		System.out.println(this.nom+" attaque de "+degats+" points le Pokemon "+pok.nom+" (vie : "+pok.getHp()+")");
-		pok.setHp(hp-degats);
+		pok.setHp(pok.getHp()-degats);
 		
 		System.out.println(pok.toString());
 		
@@ -65,7 +66,6 @@ public class Pokemon {
 			System.out.println("RIP "+pok+"...");
 		}
 	}
-	
 	
 	
 	/**
