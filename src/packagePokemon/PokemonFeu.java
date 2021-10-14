@@ -11,7 +11,7 @@ public class PokemonFeu extends Pokemon {
 	 * @param pok le pokémon attaqué
 	 */
 	public void attaquer(Pokemon pok) {
-		double attaqueDeBase=pok.getAtk();
+		double attaqueDeBase=this.getAtk();
 		
 		//si un pokemonfeu attaque un pokemonplante son attaque est multipliée par 2
 		if (pok instanceof PokemonPlante) {
